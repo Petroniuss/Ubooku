@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="login-box">
+        <h1>Login</h1>
+        <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+            <div class="text-box">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Email" name="email"
+                 #email ngModel required>
+            </div>
+            <div class="text-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password"
+                name="password" #password ngModel required>
+            </div>
+            
+            <button class="btn" type="submit"
+             [disabled]="!loginForm.valid"
+             [ngClass]="{'disabled': !loginForm.valid}">
+             Sign in
+            </button>
+            <div *ngIf="loading" class="fa-3x spinner">
+                <i class="fas fa-spinner fa-spin"></i>
+            </div>
+        </form>
+    </div>
+</div>

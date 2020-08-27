@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Rajdhani|Righteous&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    padding-top: 0;
+}
+
+header {
+    overflow: visible;
+}

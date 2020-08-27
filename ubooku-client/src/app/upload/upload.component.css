@@ -1,0 +1,170 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    font-family: 'Righteous';
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 700px){
+    .cont {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 140px;
+    }
+
+    .right {
+        margin-bottom: 100px;
+    }
+}
+.title {
+    background-color: #f5af19;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: .5s;
+}
+
+.title:hover {
+    box-shadow: 0px 0px 20px -12px rgba(0,0,0,0.8);
+}
+
+h1 {
+    text-align: center;
+    align-self: center;
+    width: fit-content;
+    border-bottom-color: crimson;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+.container input {
+    font-family: 'Righteous', 'Rajdhani';
+}
+
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #203A43;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.custom-file-upload:hover {
+    background-color: crimson;
+    color: white;
+}
+
+
+
+.container button {
+    width: 200px;
+    background: none;
+    border: none;
+    font-family: 'Righteous';
+    font-size: 2rem;
+    align-self: center;
+    margin-top: 40px;
+    border: 2px solid #eeeeee;
+    transition: .2s;
+    border-radius: 35px;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.custom-file-upload {
+    align-self: center;
+    width: 400px;
+    text-align: center;
+}
+
+.container button:enabled:hover {
+    background-color: crimson;
+    color: white;
+    
+}
+
+.center {
+    align-self: center;
+    margin-top: 15px;
+}
+
+.info {
+    color: crimson;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.cont {
+    width: 100%;
+    height: min-content;
+    display: flex;
+}
+
+.cont .left {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 10px;
+}
+
+.cont .right {
+    flex: 50%;
+    height: inherit;
+    margin-left: 40px;
+}
+
+.cont .right img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    border-radius: 300px;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 20px;
+    transition: .5s;
+}
+
+.cont .right img:hover {
+    border-color: #203A43;
+    border: 2px solid #203A43;
+}
+
+
+
+.footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-self: center;
+    background-color: black;
+    height: 200px;
+    width: 100%;
+    color: white;
+    font-family: 'Rajdhani';
+    text-align: center;
+}
+
+.footer h1 {
+    align-self: center;
+    border-bottom: 2px solid #CB356B;
+}
+
+.footer p {
+    font-style: oblique;
+}
+

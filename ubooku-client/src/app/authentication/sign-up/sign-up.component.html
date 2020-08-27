@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="register-box">
+        <h1>Register</h1>
+        <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+            <div class="text-box">
+                <i class="fas fa-book-reader"></i>
+                <input type="text" placeholder="First Name" name="firstName"
+                    #firstName ngModel required>
+            </div>
+            <div class="text-box">
+                    <i class="fas fa-signature"></i>
+                    <input type="text" placeholder="Last Name" name="lastName" #lastName ngModel required>
+                </div>
+            <div class="text-box">
+                    <i class="fas fa-at"></i>
+                <input type="text" placeholder="Email" name="email" ngModel required>
+            </div>
+            <div class="text-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password" name="password" ngModel required>
+            </div>
+            
+            <button class="btn" type="submit" 
+                [disabled]="!form.valid"
+                [ngClass]="{'disabled': !form.valid}"
+            >Sign up</button>
+        </form>
+        <div *ngIf="loading" class="fa-3x spinner">
+            <i class="fas fa-spinner fa-spin"></i>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,159 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.login-box {
+    width: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px){
+    .login-box {
+        max-width: 320px;
+    }
+}
+
+.login-box h1 {
+    font-size: 4rem;
+    align-self: center;
+    border-bottom: 4px solid #FFD194;
+    margin-bottom: 20px;
+    padding: 13px 0;
+    transition: .5s;
+}
+
+.login-box h1:hover {
+    border-bottom: 4px solid #D1913C;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.text-box {
+    width: 100%;
+    font-size: 3rem;
+    border-bottom: 1px solid  #FFD194;
+    overflow: hidden;
+    padding: 4px 0;
+    margin: 4px 0;
+    transition: .5s;
+}
+
+.text-box:hover {
+    border-bottom: 1px solid #D1913C;
+}
+
+.text-box i {
+    transition: .5s;
+}
+
+.text-box:hover i {
+    color: #D1913C;
+}
+
+.text-box i {
+    position: relative;
+    width: 20px;
+    left: 0;
+    text-align: center;
+}
+
+.text-box input {
+    font-size: 1.5rem;
+    width: 80%;
+    border: none;
+    outline: none;
+    background: none;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+input::placeholder {
+    color: whitesmoke;
+    opacity: 0.5;
+}
+
+.btn {
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Righteous';
+    font-size: 3rem;
+    color: white;
+    border-radius: 25px;
+    padding: 7px;
+    transition: .5s;
+    margin-top: 20px;    
+    background: #f46b45;
+    outline: none;
+    border: none;
+    padding: 10px;
+    width: 12rem;
+    margin-top: 40px;
+}
+
+.btn:hover {
+    background: #D1913C;
+    width: 60%;
+    border-radius: 40px;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #203A43;
+    padding: 40px;
+    border-radius: 60px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+}
+
+.icons {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.icon {
+    background: dodgerblue;
+    align-self: center;
+    width: 50px;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    border-radius: 20px;
+    transition-duration: .5s;
+}
+
+.icon:hover {
+    padding: 40px;
+    border-radius: 60px;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.spinner {
+    position: absolute;
+    color: crimson;
+}

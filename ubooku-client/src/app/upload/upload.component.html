@@ -1,0 +1,47 @@
+  <form [formGroup]="bookForm" (ngSubmit)="onSubmit()" class="container">
+    <div class="title">
+      <h1>Share</h1>
+    </div>
+    <div class="cont">
+      <div class="left">
+        <mat-form-field >
+          <input matInput placeholder="title" formControlName="title" required>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput  placeholder="author" formControlName="author" required>
+        </mat-form-field>
+      </div>
+      <div class="right">
+        <img src="\assets\res\love_reading.jpg">
+      </div>
+    </div>
+    <mat-form-field>
+      <mat-label>Categories</mat-label>
+      <mat-select multiple formControlName="categories">
+        <mat-option *ngFor="let cat of categories" [value]="cat">
+        {{cat}}  
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <label for="file-upload" class="custom-file-upload">
+        <i class="fas fa-cloud-download-alt"></i>
+        Upload a book!
+    </label>
+    <input id="file-upload" type="file" formControlName="pdfFile" (change)="onFileChange($event)"required/>
+    <button [disabled]="!bookForm.valid"type="submit">Submit</button>
+    <div *ngIf="info" class="info center">
+      <h3>{{info}}</h3>
+    </div>
+    <div *ngIf="loading" class="center fa-2x">
+      <i class="fas fa-spinner fa-spin"></i>
+    </div>
+  </form>
+  <div class="footer">
+    <h1>
+      My first web application
+    </h1>
+    <p>
+      Algorithm<br>
+       Word used by programmers when they don't want to explain what they did.
+    </p>
+  </div>

@@ -1,0 +1,18 @@
+<search-box (search)="onSearch($event)"> </search-box>
+<form [formGroup]="form" (submit)="onSubmit(form.value)" class="container">
+    <ul class="ks-cboxtags">
+        <li *ngFor="let cat of categories">
+          <input (click)="toggle(cat)" type="checkbox" [id]="cat.cat" [value]="cat.cat">
+           <label [for]="cat.cat">{{cat.cat}}</label></li>
+    </ul>
+    <button type="submit">Search</button>
+  </form>
+<div class="book-container">
+  <book-card  *ngFor="let book of uploadedBooks" [book]="book"></book-card>
+</div>
+<div class="footer">
+    <h1>
+      My first web application
+    </h1>
+    <p>I like singleton pattern so much that i always create view instances.</p>
+  </div>

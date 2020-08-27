@@ -1,0 +1,17 @@
+<a [href]="link" class="card">
+  <img [src]="img" *ngIf="!isImgLoading; else imgLoading">
+  <ng-template #imgLoading>
+      <div class="fa-3x spinner">
+          <i class="fas fa-spinner fa-spin"></i>
+      </div>
+  </ng-template>
+  <div class="line"></div>
+  <div class="info">
+    <h3>Title: </h3>
+    <h1>{{book.title}}</h1>
+  </div>
+  <div class="info">
+    <h3>Author: </h3>
+    <h1>{{book.author}}</h1>
+  </div>
+</a>

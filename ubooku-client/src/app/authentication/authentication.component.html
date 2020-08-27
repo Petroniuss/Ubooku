@@ -1,0 +1,34 @@
+
+<div class="container">
+  <mat-tab-group [backgroundColor]="'primary'" color="accent">
+    <mat-tab class="tab">
+      <ng-template mat-tab-label class="header">
+        <i class="far fa-paper-plane icon"></i>
+        <h1>Login</h1>
+      </ng-template>
+      <div class="tab">
+        <sign-in></sign-in>
+      </div>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <i class="fas fa-address-book icon"></i>
+        <h1>Register</h1>
+      </ng-template>
+      <div class="tab">
+        <sign-up></sign-up>
+      </div>
+    </mat-tab>
+    <!-- <mat-tab> 
+        <ng-template mat-tab-label>
+            <h1 class="brand">uB<span>oo</span>ku</h1>
+        </ng-template>
+        <div class="tab">
+            <div class="home">
+                <a [routerLink]="'/home'">Home</a>
+            </div>
+        </div>
+      </mat-tab>
+    -->
+  </mat-tab-group>
+</div>

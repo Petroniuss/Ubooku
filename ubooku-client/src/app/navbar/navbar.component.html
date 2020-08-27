@@ -1,0 +1,31 @@
+<header>
+  <div class="menu-toggle" id="hamburger">
+      <i class="fas fa-bars"></i>
+  </div>
+  <div class="overlay"></div>
+  <div class="container">
+      <nav>
+          <h1 class="brand"><a >uB<span>oo</span>ku</a></h1>
+          <ul>
+              <li><a [routerLink]="'/home'">Home</a></li>
+              <li><a [routerLink]="'/library'">Library</a></li>
+                <li> <a [routerLink]="'/share'">Share</a></li>
+              <li>
+                <a *ngIf="!isLogged()" [routerLink]="'/auth'">
+                    Login
+                </a>
+                <div *ngIf="isLogged()">
+                    <i class="fas fa-user user"></i>
+                    <div *ngIf="user" class="pop-up">
+                        <img *ngIf="user.imageUrl" [src]="user.imageUrl">
+                        <h3>{{user.firstName}}</h3>
+                        <h3>{{user.lastName}}</h3>
+                        <h3>{{user.email}}</h3>
+                        <button (click)="logout()">Logout</button>
+                    </div>
+                </div>
+            </li>
+          </ul>
+      </nav>
+  </div>
+</header>

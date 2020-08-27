@@ -1,0 +1,69 @@
+
+.header-line {
+    background-color: #696969;
+}
+
+.tab {
+    height: 800px;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin-top: 0;
+}
+
+.icon {
+    margin-right: 12px;
+}
+
+
+.header {
+    height: 40px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.brand{
+	font-size: 2rem;
+	font-weight: 300;
+    font-family: "Righteous", sans-serif;
+    margin: 20px;
+}
+
+
+.brand span{
+	color: crimson;
+}
+
+.home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home a {
+    background-color: #CB356B;
+    font-family: 'Righteous', sans-serif;
+    font-size: 6rem;
+    border-radius: 100px;
+    transition: .5s;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.home a:hover {
+    background-color: crimson;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.8);
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
