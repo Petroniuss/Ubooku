@@ -16,8 +16,8 @@ Client was created using angular framework and typescript.
 
 For backend I went with:
 
-- java 11
-- Spring Boot -
+- java 11 (good old java ;) )
+- Spring Boot (mainstream framework for backend in java)
 - GCS (Google Cloud Storage) - blob store for pdfs and book thumbnails.
 - MonogoDB - NoSQL database for storing user information.
 
